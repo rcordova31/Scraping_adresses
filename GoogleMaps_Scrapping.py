@@ -140,7 +140,7 @@ def maps(direc,driver):
                 llave1 = [i,dir1,coord]
 
         except:
-            t = 1
+            continue
         # print('Coord. obtenida: ' + coord + ' ||| Dir. buscada: ' + i + ' ||| Dir. Obtenida: ' + dir1)
         copia = coord
         dicF = dict(zip(llave0,llave1))
@@ -165,7 +165,7 @@ def save_file(lista_final):
 
 
 def main():
-    ruta = 'no_geo.csv'
+    ruta = '3 Mal Georeferenciados.csv'
     driver = get_driver()
     driver = connect_web(driver)
     direc = read_direc(ruta)
